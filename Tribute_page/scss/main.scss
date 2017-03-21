@@ -1,0 +1,104 @@
+body {
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    margin: 40px auto;
+}
+
+.container {
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    background: #ccc;
+    justify-content: center;
+    text-align: center;
+    .title {
+    }
+    .img {
+        border: 2px solid #fff;
+        text-align: center;
+        background: #fff;
+    }
+    .quote {
+        font-style: italic;
+        border: 1px dashed #fff;
+        padding: 10px;
+    }
+}
+
+h1 {
+    font-size: 1.8rem;
+    padding: 10px;
+}
+
+h2 {
+    font-size: 1.6rem;
+}
+
+h3 {
+    font-size: 1.4rem;
+}
+
+.bio ul li {
+  list-style-type: none;
+  position: relative;
+  width: 6px;
+  margin: 0 auto;
+  padding-top: 50px;
+  background: #fff;
+}
+ 
+.bio ul li::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: inherit;
+}
+
+.bio ul li div {
+  position: relative;
+  bottom: 0;
+  width: 400px;
+  padding: 15px;
+  background: #F45B69;
+}
+ 
+.bio ul li div::before {
+  content: '';
+  position: absolute;
+  bottom: 7px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+
+.bio ul li:nth-child(odd) div {
+  left: 45px;
+}
+ 
+.bio ul li:nth-child(odd) div::before {
+  left: -15px;
+  border-width: 8px 16px 8px 0;
+  border-color: transparent #F45B69 transparent transparent;
+}
+
+.bio ul li:nth-child(even) div {
+  left: -439px;
+}
+ 
+.bio ul li:nth-child(even) div::before {
+  right: -15px;
+  border-width: 8px 0 8px 16px;
+  border-color: transparent transparent transparent #F45B69;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+}
